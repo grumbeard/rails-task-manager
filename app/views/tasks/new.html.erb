@@ -1,0 +1,12 @@
+<h1>Create a New Task</h1>
+
+<form action="/tasks" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="name">Title: </label>
+  <input type="text" name="task[title]" id="name">
+
+  <label for="address">Details: </label>
+  <input type="text" name="task[details]" id="address">
+
+  <input type="submit">
+</form>
